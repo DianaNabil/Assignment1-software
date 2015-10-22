@@ -8,59 +8,56 @@ and write a short program that illustrates all the features. */
 #include "math.h"
 
 using namespace std;
- class BankAccount 
-{ 
+ class BankAccount { 
 private:
 string name;
 string accountno;
 double balance;
 
 public:
-BankAccount ()
-{
-name="no_name";
-balance=0;
-accountno="no_number";
+BankAccount () {
+ name="no_name";
+ balance=0;
+ accountno="no_number";
 }
-string getname ()
-{ return name;
+string getname () { 
+ return name;
 }
-string getaccountno ()
-{ return accountno;
+string getaccountno () { 
+ return accountno;
 }
-double getbalance ()
-{ return balance;
+double getbalance () { 
+ return balance;
 }
-void setname (string n)
-{name=n;
+void setname (string n) {
+ name=n;
 }
-void setaccountno (string x)
-{accountno=x;
+void setaccountno (string x) {
+ accountno=x;
 }
-void deposit (double d)
-{if(d>0)
-balance=balance+d;
+void deposit (double d) {
+  if(d>0)
+   balance=balance+d;
 }
-void withdraw(double w)
-{ if(balance>w)
-balance=balance-w;
+void withdraw(double w){ 
+  if(balance>w)
+   balance=balance-w;
 }
 };
- void main ()
-{ 
- BankAccount x;
+ void main () { 
+  BankAccount x;
+  
+  cout<<x.getname()<< "\n";
+  cout<<x.getaccountno()<< "\n";
+  cout<<x.getbalance()<< "\n";
  
- cout<<x.getname()<< "\n";
- cout<<x.getaccountno()<< "\n";
- cout<<x.getbalance()<< "\n";
-
- x.setname("Diana");
- x.setaccountno ("1234");
- x.deposit(500);
- x.withdraw(60);
-
- cout<<x.getname()<< "\n";
- cout<<x.getaccountno()<< "\n";
- cout<<x.getbalance()<< "\n";
-
+  x.setname("Diana");
+  x.setaccountno ("1234");
+  x.deposit(500);
+  x.withdraw(60);
+ 
+  cout<<x.getname()<< "\n";
+  cout<<x.getaccountno()<< "\n";
+  cout<<x.getbalance()<< "\n";
+ 
 }
