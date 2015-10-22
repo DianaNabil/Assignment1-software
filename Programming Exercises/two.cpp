@@ -2,10 +2,10 @@
 class Person {
 private:
 static const LIMIT = 25;
-string lname; // Person’s last name
-char fname[LIMIT]; // Person’s first name
+string lname; // Personâ€™s last name
+char fname[LIMIT]; // Personâ€™s first name
 public:
-Person() {lname = ""; fname[0] = ‘\0’; } // #1
+Person() {lname = ""; fname[0] = â€˜\0â€™; } // #1
 Person(const string & ln, const char * fn = "Heyyou"); // #2
 // the following methods display lname and fname
 void Show() const; // firstname lastname format
@@ -15,7 +15,7 @@ void FormalShow() const; // lastname, firstname format
 the two forms are used.) Write a program that completes the implementation by
 providing code for the undefined methods.The program in which you use the class
 should also use the three possible constructor calls (no arguments, one argument,
-and two arguments) and the two display methods. Here’s an example that uses the
+and two arguments) and the two display methods. Hereâ€™s an example that uses the
 constructors and methods:
 Person one; // use default constructor
 Person two("Smythecraft"); // use #2 with one default argument
@@ -35,14 +35,14 @@ using namespace std;
 class Person {
 private:
 static const int LIMIT = 25;
-string lname; // Person’s last name
-char fname[LIMIT]; // Person’s first name
+string lname; // Personâ€™s last name
+char fname[LIMIT]; // Personâ€™s first name
 
 public:
 Person() 
 {
-	lname = " "; 
-	fname[0] = '\0'; 
+ lname = " "; 
+ fname[0] = '\0'; 
 } 
 Person(const string & ln, const char * fn = "Heyyou")
 { lname=ln;
@@ -51,12 +51,12 @@ strcpy(fname,fn);
 
 void Show() const
 {
-	cout<<"\n" << fname << " " << lname;
+ cout<<"\n" << fname << " " << lname;
 }
 
 void FormalShow() const
 {
-	cout<<"\n" << lname << ", " << fname;
+ cout<<"\n" << lname << ", " << fname;
 }
 
 };
