@@ -107,5 +107,5 @@ Default constructor is the initialization way when we define an object in the cl
 
 ##### 10. What are this and *this?
 this: is a pointer used in classes methods, it points to the address of the object.
-*: points to the object itelf.
+*: points to the object data itelf.
 
