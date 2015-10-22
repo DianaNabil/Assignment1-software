@@ -1,4 +1,4 @@
-/* 6. Here’s a class declaration:
+/* 6. Hereâ€™s a class declaration:
 class Move
 {
 private:
@@ -24,16 +24,15 @@ Create member function definitions and a program that exercises the class.
 using namespace std;
 
 
-class Move
-{
+class Move {
 private:
 double x;
 double y;
 
 public:
-Move(double a = 0, double b = 0)
-{ x=a;
-y=b;
+Move(double a = 0, double b = 0) { 
+ x=a;
+ y=b;
 }
 
 void showmove() const
